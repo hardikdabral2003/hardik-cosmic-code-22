@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cyberpunk Futuristic Design System - All colors MUST be HSL */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Cyberpunk Dark Theme */
+    --background: 240 10% 3.9%;
+    --foreground: 120 100% 85%;
+
+    --card: 240 10% 5.9%;
+    --card-foreground: 120 100% 85%;
+
+    --popover: 240 10% 5.9%;
+    --popover-foreground: 120 100% 85%;
+
+    /* Neon Green Primary */
+    --primary: 120 100% 50%;
+    --primary-foreground: 240 10% 3.9%;
+    --primary-glow: 120 100% 65%;
+
+    /* Electric Secondary */
+    --secondary: 240 10% 10%;
+    --secondary-foreground: 120 100% 85%;
+
+    --muted: 240 10% 8%;
+    --muted-foreground: 120 20% 65%;
+
+    /* Cyber Accent */
+    --accent: 180 100% 50%;
+    --accent-foreground: 240 10% 3.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 100% 20%;
+    --input: 240 10% 8%;
+    --ring: 120 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Cyberpunk Colors */
+    --cyber-green: 120 100% 50%;
+    --cyber-green-dim: 120 100% 35%;
+    --cyber-blue: 180 100% 50%;
+    --cyber-purple: 270 100% 50%;
+    --dark-void: 240 10% 3.9%;
+    --dark-surface: 240 10% 6%;
+    --dark-elevated: 240 10% 8%;
+
+    /* Glowing Effects */
+    --glow-green: 0 0 20px hsl(120 100% 50% / 0.5);
+    --glow-green-intense: 0 0 40px hsl(120 100% 50% / 0.8);
+    --glow-blue: 0 0 20px hsl(180 100% 50% / 0.5);
+
+    /* Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(120 100% 50%) 0%, hsl(180 100% 50%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(240 10% 3.9%) 0%, hsl(240 10% 1%) 100%);
+    --gradient-glow: radial-gradient(circle, hsl(120 100% 50% / 0.1) 0%, transparent 70%);
+
+    /* Animations */
+    --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: box-shadow 0.3s ease, transform 0.3s ease;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark theme is the default cyberpunk theme */
+  .light {
+    /* Light theme disabled for cyberpunk aesthetic */
+    --background: 240 10% 3.9%;
+    --foreground: 120 100% 85%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-dark-void text-foreground font-rajdhani overflow-x-hidden;
+    background: var(--gradient-dark);
+    min-height: 100vh;
+  }
+
+  /* Cyberpunk Typography */
+  .font-orbitron {
+    font-family: 'Orbitron', monospace;
+  }
+
+  .font-rajdhani {
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  /* Glow Effects */
+  .glow-green {
+    box-shadow: var(--glow-green);
+  }
+
+  .glow-green-intense {
+    box-shadow: var(--glow-green-intense);
+  }
+
+  .glow-blue {
+    box-shadow: var(--glow-blue);
+  }
+
+  /* Cyber Text Effects */
+  .text-glow {
+    text-shadow: 0 0 10px hsl(120 100% 50% / 0.8),
+                 0 0 20px hsl(120 100% 50% / 0.6),
+                 0 0 30px hsl(120 100% 50% / 0.4);
+  }
+
+  .text-cyber {
+    background: var(--gradient-cyber);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: var(--glow-green); }
+    50% { box-shadow: var(--glow-green-intense); }
+  }
+
+  @keyframes matrix-scroll {
+    0% { transform: translateY(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-matrix-scroll {
+    animation: matrix-scroll 4s linear infinite;
+  }
+
+  /* Interactive Hover Effects */
+  .hover-tilt {
+    transition: var(--transition-cyber);
+  }
+
+  .hover-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg) translateZ(10px);
+  }
+
+  .hover-glow {
+    transition: var(--transition-glow);
+  }
+
+  .hover-glow:hover {
+    box-shadow: var(--glow-green-intense);
+    transform: translateY(-2px);
+  }
+}
