@@ -53,21 +53,21 @@ export default function CyberHero() {
         />
       </div>
 
-      {/* Floating Particles Effect */}
+      {/* Matrix Rain Effect - Japanese Text */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(15)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute text-cream-primary text-sm opacity-20 animate-matrix-scroll font-mono"
+            className="absolute text-cream-primary text-sm opacity-30 animate-matrix-scroll font-mono"
             style={{
               left: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 4}s`,
               animationDuration: `${4 + Math.random() * 2}s`,
             }}
           >
-            {Array.from({ length: 8 }, () => 
-              String.fromCharCode(0x2022 + Math.random() * 10)
-            ).join(' ')}
+            {Array.from({ length: 10 }, () => 
+              String.fromCharCode(0x30A0 + Math.random() * 96)
+            ).join('')}
           </div>
         ))}
       </div>
