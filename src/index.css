@@ -7,37 +7,37 @@
 
 @layer base {
   :root {
-    /* Cream White Theme */
-    --background: 45 25% 97%;
-    --foreground: 30 10% 20%;
+    /* Dark Background with Cream Text Theme */
+    --background: 0 0% 8%;
+    --foreground: 35 45% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 30 10% 20%;
+    --card: 0 0% 12%;
+    --card-foreground: 35 45% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 30 10% 20%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 35 45% 85%;
 
     /* Warm Cream Primary */
     --primary: 35 45% 75%;
-    --primary-foreground: 30 10% 20%;
+    --primary-foreground: 0 0% 8%;
     --primary-glow: 35 55% 85%;
 
     /* Soft Secondary */
-    --secondary: 30 15% 92%;
-    --secondary-foreground: 30 10% 25%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 35 45% 85%;
 
-    --muted: 30 10% 95%;
-    --muted-foreground: 30 8% 45%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 35 20% 65%;
 
     /* Gold Accent */
     --accent: 45 70% 70%;
-    --accent-foreground: 30 10% 20%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 30 15% 88%;
-    --input: 30 10% 95%;
+    --border: 0 0% 25%;
+    --input: 0 0% 15%;
     --ring: 35 45% 75%;
 
     --radius: 0.75rem;
@@ -47,9 +47,9 @@
     --cream-light: 35 55% 85%;
     --cream-gold: 45 70% 70%;
     --cream-warm: 25 35% 80%;
-    --light-surface: 0 0% 100%;
-    --light-elevated: 30 20% 98%;
-    --light-soft: 30 15% 96%;
+    --light-surface: 0 0% 12%;
+    --light-elevated: 0 0% 18%;
+    --light-soft: 0 0% 22%;
 
     /* Soft Glowing Effects */
     --glow-cream: 0 0 15px hsl(35 45% 75% / 0.3);
@@ -58,7 +58,7 @@
 
     /* Gradients */
     --gradient-cream: linear-gradient(135deg, hsl(35 45% 75%) 0%, hsl(45 70% 70%) 100%);
-    --gradient-light: linear-gradient(180deg, hsl(45 25% 97%) 0%, hsl(35 20% 95%) 100%);
+    --gradient-light: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 4%) 100%);
     --gradient-glow: radial-gradient(circle, hsl(35 45% 75% / 0.1) 0%, transparent 70%);
 
     /* Animations */
