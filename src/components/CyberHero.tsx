@@ -45,8 +45,8 @@ export default function CyberHero() {
         <div className="absolute inset-0" 
              style={{
                backgroundImage: `
-                 linear-gradient(rgba(212, 175, 122, 0.15) 1px, transparent 1px),
-                 linear-gradient(90deg, rgba(212, 175, 122, 0.15) 1px, transparent 1px)
+                 linear-gradient(rgba(232, 244, 253, 0.15) 1px, transparent 1px),
+                 linear-gradient(90deg, rgba(232, 244, 253, 0.15) 1px, transparent 1px)
                `,
                backgroundSize: '50px 50px'
              }} 
@@ -58,7 +58,7 @@ export default function CyberHero() {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute text-cream-primary text-sm opacity-30 animate-matrix-scroll font-mono"
+            className="absolute text-ice-blue text-sm opacity-30 animate-matrix-scroll font-mono"
             style={{
               left: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 4}s`,
@@ -72,6 +72,22 @@ export default function CyberHero() {
         ))}
       </div>
 
+      {/* Floating Particles Around */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(15)].map((_, i) => (
+          <div
+            key={`particle-${i}`}
+            className="absolute w-1 h-1 bg-ice-white rounded-full opacity-40 animate-float"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${3 + Math.random() * 2}s`,
+            }}
+          />
+        ))}
+      </div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -80,14 +96,14 @@ export default function CyberHero() {
       >
         <motion.div variants={titleVariants} className="mb-8">
           <h1 className="text-6xl md:text-8xl font-orbitron font-black mb-4 text-glow hover-tilt">
-            <span className="text-cream">HARDIK</span>
+            <span className="text-ice">HARDIK</span>
           </h1>
-          <div className="h-1 w-32 bg-gradient-cream mx-auto mb-6 glow-cream" />
+          <div className="h-1 w-32 bg-gradient-ice mx-auto mb-6 glow-ice" />
         </motion.div>
 
         <motion.h2 
           variants={itemVariants}
-          className="text-2xl md:text-4xl font-rajdhani font-light mb-6 text-cream-primary"
+          className="text-2xl md:text-4xl font-rajdhani font-light mb-6 text-ice-blue"
         >
           Freelance Frontend Web Developer
         </motion.h2>
@@ -96,23 +112,23 @@ export default function CyberHero() {
           variants={itemVariants}
           className="text-lg md:text-xl font-rajdhani mb-12 text-muted-foreground max-w-2xl mx-auto leading-relaxed"
         >
-          I craft <span className="text-cream-primary font-semibold">interactive</span>, 
-          <span className="text-cream-gold font-semibold"> cinematic</span> web experiences with code.
+          I craft <span className="text-ice-blue font-semibold">interactive</span>, 
+          <span className="text-ivory font-semibold"> cinematic</span> web experiences with code.
           <br />
-          Specializing in <span className="text-cream">React • Next.js • Three.js • GSAP</span>
+          Specializing in <span className="text-ice">React • Next.js • Three.js • GSAP</span>
         </motion.p>
 
         <motion.div 
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
         >
-          <Button variant="cream-glow" size="lg" className="hover-glow group">
+          <Button variant="ice-glow" size="lg" className="hover-glow group">
             <Mail className="w-5 h-5 mr-2" />
             Hire Me
             <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
           
-          <Button variant="cream" size="lg" className="hover-glow">
+          <Button variant="ice" size="lg" className="hover-glow">
             View Portfolio
           </Button>
         </motion.div>
@@ -129,11 +145,11 @@ export default function CyberHero() {
             <motion.a
               key={label}
               href="#"
-              className="group flex flex-col items-center space-y-2 text-muted-foreground hover:text-cream-primary transition-all duration-300 hover-tilt"
+              className="group flex flex-col items-center space-y-2 text-muted-foreground hover:text-ice-blue transition-all duration-300 hover-tilt"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="p-3 border border-cream-primary/50 rounded-lg group-hover:border-cream-primary group-hover:shadow-glow-cream transition-all duration-300">
+              <div className="p-3 border border-ice-blue/50 rounded-lg group-hover:border-ice-blue group-hover:shadow-glow-ice transition-all duration-300">
                 <Icon className="w-6 h-6" />
               </div>
               <span className="text-sm font-rajdhani">{label}</span>
@@ -143,27 +159,27 @@ export default function CyberHero() {
 
         {/* Floating Tech Icons */}
         <motion.div className="absolute top-20 left-10 animate-float" style={{ animationDelay: '0s' }}>
-          <div className="w-16 h-16 border border-cream-gold rounded-lg flex items-center justify-center text-cream-gold opacity-40">
+          <div className="w-16 h-16 border border-ivory rounded-lg flex items-center justify-center text-ivory opacity-40">
             <span className="font-mono text-xs">{'</>'}</span>
           </div>
         </motion.div>
 
         <motion.div className="absolute top-32 right-16 animate-float" style={{ animationDelay: '1s' }}>
-          <div className="w-12 h-12 border border-cream-primary rounded-lg flex items-center justify-center text-cream-primary opacity-40">
+          <div className="w-12 h-12 border border-ice-blue rounded-lg flex items-center justify-center text-ice-blue opacity-40">
             <span className="font-mono text-xs">JS</span>
           </div>
         </motion.div>
 
         <motion.div className="absolute bottom-32 left-20 animate-float" style={{ animationDelay: '2s' }}>
-          <div className="w-14 h-14 border border-cream-warm rounded-lg flex items-center justify-center text-cream-warm opacity-40">
+          <div className="w-14 h-14 border border-frost rounded-lg flex items-center justify-center text-frost opacity-40">
             <span className="font-mono text-xs">3D</span>
           </div>
         </motion.div>
       </motion.div>
 
       {/* Glow orbs */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-cream-primary rounded-full opacity-10 blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cream-gold rounded-full opacity-10 blur-3xl" />
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-ice-blue rounded-full opacity-10 blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-ivory rounded-full opacity-10 blur-3xl" />
     </div>
   );
 }

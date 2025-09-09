@@ -58,11 +58,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Cream Colors
-        "cream-primary": "hsl(var(--cream-primary))",
-        "cream-light": "hsl(var(--cream-light))",
-        "cream-gold": "hsl(var(--cream-gold))",
-        "cream-warm": "hsl(var(--cream-warm))",
+        // Ice White Colors
+        "ice-white": "hsl(var(--ice-white))",
+        "ice-blue": "hsl(var(--ice-blue))",
+        "ivory": "hsl(var(--ivory))",
+        "frost": "hsl(var(--frost))",
         "light-surface": "hsl(var(--light-surface))",
         "light-elevated": "hsl(var(--light-elevated))",
         "light-soft": "hsl(var(--light-soft))",
@@ -72,14 +72,14 @@ export default {
         rajdhani: ['Rajdhani', 'sans-serif'],
       },
       backgroundImage: {
-        "gradient-cream": "var(--gradient-cream)",
+        "gradient-ice": "var(--gradient-ice)",
         "gradient-light": "var(--gradient-light)",
         "gradient-glow": "var(--gradient-glow)",
       },
       boxShadow: {
-        "glow-cream": "var(--glow-cream)",
-        "glow-cream-intense": "var(--glow-cream-intense)",
-        "glow-gold": "var(--glow-gold)",
+        "glow-ice": "var(--glow-ice)",
+        "glow-ice-intense": "var(--glow-ice-intense)",
+        "glow-ivory": "var(--glow-ivory)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -108,8 +108,8 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "var(--glow-cream)" },
-          "50%": { boxShadow: "var(--glow-cream-intense)" },
+          "0%, 100%": { boxShadow: "var(--glow-ice)" },
+          "50%": { boxShadow: "var(--glow-ice-intense)" },
         },
         "matrix-scroll": {
           "0%": { transform: "translateY(-100%)", opacity: "0" },

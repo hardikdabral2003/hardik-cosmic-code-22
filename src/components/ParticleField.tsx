@@ -36,7 +36,7 @@ function ParticleSystem() {
     <Points ref={ref} positions={particlesPosition} stride={3} frustumCulled={false}>
       <PointMaterial
         transparent
-        color="#D4AF7A"
+        color="#E8F4FD"
         size={0.15}
         sizeAttenuation={true}
         depthWrite={false}

@@ -7,30 +7,30 @@
 
 @layer base {
   :root {
-    /* Dark Background with Cream Text Theme */
+    /* Dark Background with Ice White Theme */
     --background: 0 0% 8%;
-    --foreground: 35 45% 85%;
+    --foreground: 210 20% 92%;
 
     --card: 0 0% 12%;
-    --card-foreground: 35 45% 85%;
+    --card-foreground: 210 20% 92%;
 
     --popover: 0 0% 12%;
-    --popover-foreground: 35 45% 85%;
+    --popover-foreground: 210 20% 92%;
 
-    /* Warm Cream Primary */
-    --primary: 35 45% 75%;
+    /* Ice White Primary */
+    --primary: 210 20% 85%;
     --primary-foreground: 0 0% 8%;
-    --primary-glow: 35 55% 85%;
+    --primary-glow: 210 30% 95%;
 
     /* Soft Secondary */
     --secondary: 0 0% 15%;
-    --secondary-foreground: 35 45% 85%;
+    --secondary-foreground: 210 20% 92%;
 
     --muted: 0 0% 20%;
-    --muted-foreground: 35 20% 65%;
+    --muted-foreground: 210 15% 70%;
 
-    /* Gold Accent */
-    --accent: 45 70% 70%;
+    /* Ivory Accent */
+    --accent: 45 25% 88%;
     --accent-foreground: 0 0% 8%;
 
     --destructive: 0 84.2% 60.2%;
@@ -38,28 +38,28 @@
 
     --border: 0 0% 25%;
     --input: 0 0% 15%;
-    --ring: 35 45% 75%;
+    --ring: 210 20% 85%;
 
     --radius: 0.75rem;
 
-    /* Custom Cream Colors */
-    --cream-primary: 35 45% 75%;
-    --cream-light: 35 55% 85%;
-    --cream-gold: 45 70% 70%;
-    --cream-warm: 25 35% 80%;
+    /* Custom Ice White Colors */
+    --ice-white: 210 20% 95%;
+    --ice-blue: 210 30% 85%;
+    --ivory: 45 25% 88%;
+    --frost: 200 25% 90%;
     --light-surface: 0 0% 12%;
     --light-elevated: 0 0% 18%;
     --light-soft: 0 0% 22%;
 
     /* Soft Glowing Effects */
-    --glow-cream: 0 0 15px hsl(35 45% 75% / 0.3);
-    --glow-cream-intense: 0 0 25px hsl(35 45% 75% / 0.5);
-    --glow-gold: 0 0 15px hsl(45 70% 70% / 0.4);
+    --glow-ice: 0 0 15px hsl(210 20% 85% / 0.3);
+    --glow-ice-intense: 0 0 25px hsl(210 20% 85% / 0.5);
+    --glow-ivory: 0 0 15px hsl(45 25% 88% / 0.4);
 
     /* Gradients */
-    --gradient-cream: linear-gradient(135deg, hsl(35 45% 75%) 0%, hsl(45 70% 70%) 100%);
+    --gradient-ice: linear-gradient(135deg, hsl(210 20% 85%) 0%, hsl(45 25% 88%) 100%);
     --gradient-light: linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 4%) 100%);
-    --gradient-glow: radial-gradient(circle, hsl(35 45% 75% / 0.1) 0%, transparent 70%);
+    --gradient-glow: radial-gradient(circle, hsl(210 20% 85% / 0.1) 0%, transparent 70%);
 
     /* Animations */
     --transition-cyber: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -111,27 +111,27 @@
   }
 
   /* Glow Effects */
-  .glow-cream {
-    box-shadow: var(--glow-cream);
+  .glow-ice {
+    box-shadow: var(--glow-ice);
   }
 
-  .glow-cream-intense {
-    box-shadow: var(--glow-cream-intense);
+  .glow-ice-intense {
+    box-shadow: var(--glow-ice-intense);
   }
 
-  .glow-gold {
-    box-shadow: var(--glow-gold);
+  .glow-ivory {
+    box-shadow: var(--glow-ivory);
   }
 
   /* Elegant Text Effects */
   .text-glow {
-    text-shadow: 0 0 8px hsl(35 45% 75% / 0.6),
-                 0 0 15px hsl(35 45% 75% / 0.4),
-                 0 0 20px hsl(35 45% 75% / 0.2);
+    text-shadow: 0 0 8px hsl(210 20% 85% / 0.6),
+                 0 0 15px hsl(210 20% 85% / 0.4),
+                 0 0 20px hsl(210 20% 85% / 0.2);
   }
 
-  .text-cream {
-    background: var(--gradient-cream);
+  .text-ice {
+    background: var(--gradient-ice);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -144,8 +144,8 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: var(--glow-cream); }
-    50% { box-shadow: var(--glow-cream-intense); }
+    0%, 100% { box-shadow: var(--glow-ice); }
+    50% { box-shadow: var(--glow-ice-intense); }
   }
 
   @keyframes matrix-scroll {
@@ -181,7 +181,7 @@
   }
 
   .hover-glow:hover {
-    box-shadow: var(--glow-cream-intense);
+    box-shadow: var(--glow-ice-intense);
     transform: translateY(-2px);
   }
 }
