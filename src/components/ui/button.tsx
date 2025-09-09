@@ -15,8 +15,8 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cyber: "bg-dark-elevated border border-cyber-green text-cyber-green font-orbitron hover:bg-cyber-green hover:text-dark-void hover:shadow-glow-green-intense hover:scale-105 transition-all duration-300",
-        "cyber-glow": "bg-gradient-to-r from-cyber-green to-cyber-blue text-dark-void font-orbitron font-bold shadow-glow-green hover:shadow-glow-green-intense hover:scale-105 transition-all duration-300",
+        cream: "bg-light-elevated border border-cream-primary text-cream-primary font-orbitron hover:bg-cream-primary hover:text-background hover:shadow-glow-cream-intense hover:scale-105 transition-all duration-300",
+        "cream-glow": "bg-gradient-cream text-background font-orbitron font-bold shadow-glow-cream hover:shadow-glow-cream-intense hover:scale-105 transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

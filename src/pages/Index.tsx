@@ -3,7 +3,7 @@ import CyberHero from '@/components/CyberHero';
 
 const Index = () => {
   return (
-    <div className="relative min-h-screen bg-dark-void overflow-hidden">
+    <div className="relative min-h-screen bg-background overflow-hidden">
       <ParticleField />
       <CyberHero />
     </div>

@@ -58,28 +58,28 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Cyberpunk Colors
-        "cyber-green": "hsl(var(--cyber-green))",
-        "cyber-green-dim": "hsl(var(--cyber-green-dim))",
-        "cyber-blue": "hsl(var(--cyber-blue))",
-        "cyber-purple": "hsl(var(--cyber-purple))",
-        "dark-void": "hsl(var(--dark-void))",
-        "dark-surface": "hsl(var(--dark-surface))",
-        "dark-elevated": "hsl(var(--dark-elevated))",
+        // Cream Colors
+        "cream-primary": "hsl(var(--cream-primary))",
+        "cream-light": "hsl(var(--cream-light))",
+        "cream-gold": "hsl(var(--cream-gold))",
+        "cream-warm": "hsl(var(--cream-warm))",
+        "light-surface": "hsl(var(--light-surface))",
+        "light-elevated": "hsl(var(--light-elevated))",
+        "light-soft": "hsl(var(--light-soft))",
       },
       fontFamily: {
         orbitron: ['Orbitron', 'monospace'],
         rajdhani: ['Rajdhani', 'sans-serif'],
       },
       backgroundImage: {
-        "gradient-cyber": "var(--gradient-cyber)",
-        "gradient-dark": "var(--gradient-dark)",
+        "gradient-cream": "var(--gradient-cream)",
+        "gradient-light": "var(--gradient-light)",
         "gradient-glow": "var(--gradient-glow)",
       },
       boxShadow: {
-        "glow-green": "var(--glow-green)",
-        "glow-green-intense": "var(--glow-green-intense)",
-        "glow-blue": "var(--glow-blue)",
+        "glow-cream": "var(--glow-cream)",
+        "glow-cream-intense": "var(--glow-cream-intense)",
+        "glow-gold": "var(--glow-gold)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -108,8 +108,8 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "var(--glow-green)" },
-          "50%": { boxShadow: "var(--glow-green-intense)" },
+          "0%, 100%": { boxShadow: "var(--glow-cream)" },
+          "50%": { boxShadow: "var(--glow-cream-intense)" },
         },
         "matrix-scroll": {
           "0%": { transform: "translateY(-100%)", opacity: "0" },
